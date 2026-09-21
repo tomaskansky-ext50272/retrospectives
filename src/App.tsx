@@ -214,7 +214,7 @@ export default function App() {
             {['praise', 'improve', 'actions', 'done'].includes(activeRetro.current_phase) && (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {/* Column 1: Praise - Active from 'praise' phase */}
-                <div className={retro.current_phase === 'praise' ? '' : 'opacity-60'}>
+                <div className={activeRetro.current_phase === 'praise' ? '' : 'opacity-60'}>
                   <Board
                     title="Co se povedlo 👏"
                     cards={praises.cards}
